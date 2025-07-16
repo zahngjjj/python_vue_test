@@ -1,0 +1,23 @@
+backend/
+├── main.py              # 应用入口，配置CORS等
+├── database.py          # 数据库配置
+├── models/              # 数据库模型
+│   ├── __init__.py
+│   ├── user.py         # 用户模型
+│   ├── product.py      # 产品模型
+│   └── order.py        # 订单模型
+├── schemas/             # Pydantic模型
+│   ├── __init__.py
+│   ├── user.py         # 用户相关的请求/响应模型
+│   ├── product.py      # 产品相关的请求/响应模型
+│   └── order.py        # 订单相关的请求/响应模型
+├── routers/             # API路由
+│   ├── __init__.py
+│   ├── users.py        # 用户相关接口
+│   ├── products.py     # 产品相关接口
+│   └── orders.py       # 订单相关接口
+├── services/            # 业务逻辑层（可选）
+│   ├── __init__.py
+│   ├── user_service.py
+│   └── product_service.py
+└── dependencies.py      # 依赖注入
